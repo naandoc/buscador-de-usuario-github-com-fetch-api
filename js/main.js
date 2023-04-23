@@ -79,6 +79,7 @@
         const namePerfil = createEl("p", "username");
         const namePerfilLink = createEl("a", "");
         namePerfilLink.setAttribute("href", data.html_url);
+        namePerfilLink.setAttribute("target", "_blank");
         namePerfilLink.innerText = (data.name);
         namePerfil.appendChild(namePerfilLink);
         imgAndName.appendChild(namePerfil);
